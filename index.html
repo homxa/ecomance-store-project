@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech2etc Ecommerce Tutorial</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <style>
+     
+        .hero{ 
+            height: 90vh; 
+            width: 100%;
+            background-image: url('./img/hero4.png');
+            background-position: top 2px right 0px;
+            background-size: cover;
+            
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: flex-start;
+
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 80px;
+            margin-bottom: 50px;
+        }
+        .hero h4{
+font-weight: 600;
+color: var(--dart-text);
+padding-bottom: 10px;
+
+      }
+        .hero h2{
+font-size: 30px;
+color: var(--dart-text);
+line-height: 35.3px;
+font-weight: 600;
+
+        }
+        .hero h1{
+            font-size: 32px;
+            color: darkcyan;
+            padding-bottom: 5px;
+        }
+        .hero .down p{
+            color: gray;
+            font-size: 15px;
+
+        }
+        .hero .down button{ margin-top: 10px;
+
+            background-image: url('./img/button.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: none;
+            background-color: transparent;
+          cursor: pointer;
+            padding: 10px 70px 10px 70px;
+            font-weight: 700;
+        } 
+        .Box .box{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 0 10px;
+         
+          border: 1px solid lightgrey;
+        }
+        .Box .box img{
+          width: 110px;
+          margin-bottom: 15px;
+        }
+        .Box .box p{
+          background-color: plum;
+          text-transform: capitalize;
+          font-size: 12px;
+          padding: 2px 3px;
+          display: inline-block;
+
+
+        }
+        .Box{
+          display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(130px, 150px)); 
+
+ gap: 20px;
+ justify-content: center;   
+ align-items: center; 
+ margin-bottom: 80px;   
+        }
+        .Box .item-2 p{
+          background: rgba(0, 128, 0, 0.662);
+        }
+        .Box .item-3 p{
+          background: rgba(0, 0, 255, 0.685);
+        }
+        .Box .item-4 p{
+background: pink;
+        }
+        .Box .item-6 p{
+
+        }
+        .head h1,p{
+          text-transform: capitalize;
+          margin-bottom: 7px;
+          text-align: center;
+          color: var(--dart-text);
+        }
+         .head p{
+          font-size: 13px;
+          color: gray;
+          font-weight: 500;
+        }
+        .content .head{
+          margin-bottom: 20px;
+        }
+        .items .box .img{
+          width: 100%;
+          height: 200px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .items .box .img img{
+          width: 200px;
+          height: 200px;
+          border-radius: 10px;
+
+        }
+        .items .box p{
+          text-align: inherit;
+          font-size: 13px;
+          font-weight: 600;
+          opacity: 70%;
+          padding-top: 10px;
+        }
+        .items .box .name{
+          color: var(--item-name);
+          font-size: 15px;
+          font-weight: 700;
+          text-transform: capitalize;
+        }
+        .items .box .rating img{
+          width: 75px;
+        }
+        .items .box .cart{
+          width: 40px;
+          height: 40px;
+          background:  var(--cart);
+          border-radius: 50%;
+          display: flex;
+        }
+         .price .cart i{
+          display: inline-block;
+          font-size: 25px;
+          align-self: center;
+          margin-left: 5px;
+          color: var(--money-col);
+          
+        }
+        .items{
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(180px,230px));
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        }
+        .items .box{
+          background: var(--box);
+          padding: 5px 10px;
+          border-radius: 10px;
+          
+        }
+        .price{
+          display: flex;
+          justify-content: space-between;
+        }
+        .price .money{
+          align-self: center;
+          font-weight: 700;
+          font-size: 15px;
+          color:  var(--money-col);
+        }
+        .content{
+          margin-bottom: 35px;
+        }
+        .free{
+          background-image: url('./img/banner/b2.jpg');
+          background-position: top 5px right 0;
+          background-size: cover;
+          width: 100%;
+          height: 50vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 40px;
+        }
+        .free h5,h2{
+          color: white;
+          margin-bottom: 10px;
+
+        }
+        .free b{
+          color: red;
+        }
+
+        
+.free button{
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.new{
+  margin-bottom: 40px;
+}
+.post{
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  justify-content: center;
+  align-items: center;
+}
+.post .blog:nth-of-type(1){
+grid-column: 1/3;
+
+  background: red;
+  grid-row: 1;
+
+}
+.post .blog:nth-of-type(2){
+  background: green;
+  grid-row: 1;
+  grid-column: 3/4;
+
+
+}
+.post .blog:nth-of-type(3){
+  background: brown;
+  grid-row: 2;
+}
+.post .blog:nth-of-type(4){
+  grid-row: 2;
+
+  background: plum;
+}
+.post .blog:nth-of-type(5){
+  background: red;
+  grid-row: 2;
+
+}
+        
+    </style>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+
+  <body>
+    <!-- hearder -->
+    <header>
+      <div class="header">
+        <div class="logo"><img src="./img/logo.png" alt="" /></div>
+        <nav>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="">Shop</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">About</a></li>
+          <li><img src="./img/wbag.png" alt="" /></li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+              <path
+                fill="#FFF"
+                fill-rule="evenodd"
+                d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z"
+              />
+            </svg>
+          </li>
+        </nav>
+      </div>
+
+    </header>
+    <!-- content after header big img   -->
+    <div class="hero">
+<h4>Trade-in-offer</h4>
+<h2>Super value deals</h2>
+<h1>On all products</h1>
+<div class="down">
+    <p>save more on coupons & up to 70% of!</p>
+<button>Shop Now</button>
+</div>
+    </div>
+    <!-- how it works after Hero -->
+    <div class="Box">
+<div class="item-1 box"><img src="./img/features/f1.png" alt="">
+<p>free shipping</p></div>
+<div class="item-2 box"><img src="./img/features/f2.png" alt="">
+<p>online order</p></div>
+<div class="item-3 box"><img src="./img/features/f3.png" alt=""><p>save money</p></div>
+<div class="item-4 box"><img src="./img/features/f4.png" alt=""><p>promotions</p></div>
+<div class="item-5 box"><img src="./img/features/f5.png" alt=""><p>happy sell</p></div>
+<div class="item-6 box"><img src="./img/features/f6.png" alt=""><p>24/7 suppor</p></div>
+
+    </div>
+    <!-- featured product -->
+    <div class="content">
+      <div class="head">
+        <h1> featured products</h1>
+        <p>surmer collection new morden design</p>
+      </div>
+
+
+      <div class="items">
+        <div class="box">
+          <div class="img"><img src="./img/products/n1-1.jpg" alt=""></div>
+          <p>Dior</p>
+          <div class="name">cooton astronot Hoodie</div>
+          <div class="rating"><img src="./img/ratings/rating-50.png" alt=""></div>
+          <div class="price">
+            <div class="money">$57</div>
+            <div class="cart"><i class=' car bx bx-cart-download'></i></div>
+          </div>
+        </div>
+        <div class="box"><div class="img"><img src="./img/products/f1-2.webp" alt=""></div>
+        <p>Dior</p>
+        <div class="name">cooton astronot Hoodie</div>
+        <div class="rating"><img src="./img/ratings/rating-50.png" alt=""></div>
+        <div class="price">
+          <div class="money">$57</div>
+          <div class="cart"><i class=' car bx bx-cart-download'></i></div>
+        </div></div>
+        <div class="box"><div class="img"><img src="./img/products/f1-3.webp" alt=""></div>
+        <p>Dior</p>
+        <div class="name">cooton astronot Hoodie</div>
+        <div class="rating"><img src="./img/ratings/rating-50.png" alt=""></div>
+        <div class="price">
+          <div class="money">$57</div>
+          <div class="cart"><i class=' car bx bx-cart-download'></i></div>
+        </div></div>
+        <div class="box"><div class="img"><img src="./img/products/f1-4.webp" alt=""></div>
+        <p>Dior</p>
+        <div class="name">cooton astronot Hoodie</div>
+        <div class="rating"><img src="./img/ratings/rating-50.png" alt=""></div>
+        <div class="price">
+          <div class="money">$57</div>
+          <div class="cart"><i class=' car bx bx-cart-download'></i></div>
+        </div></div>
+        
+          <div class="box"><div class="img"><img src="./img/products/f1-5.webp" alt=""></div>
+          <p>Dior</p>
+          <div class="name">cooton astronot Hoodie</div>
+          <div class="rating"><img src="./img/ratings/rating-50.png" alt=""></div>
+          <div class="price">
+            <div class="money">$57</div>
+            <div class="cart"><i class=' car bx bx-cart-download'></i></div>
+          </div></div>
+        <div class="box"><div class="img"><img src="./img/products/f1-6.webp" alt=""></div>
+        <p>Dior</p>
+        <div class="name">cooton astronot Hoodie</div>
+        <div class="rating"><img src="./img/ratings/rating-50.png" alt=""></div>
+        <div class="price">
+          <div class="money">$57</div>
+          <div class="cart"><i class=' car bx bx-cart-download'></i></div>
+        </div></div>
+        <div class="box"><div class="img"><img src="./img/products/f1-7.webp" alt=""></div>
+        <p>Dior</p>
+        <div class="name">cooton astronot Hoodie</div>
+        <div class="rating"><img src="./img/ratings/rating-50.png" alt=""></div>
+        <div class="price">
+          <div class="money">$57</div>
+          <div class="cart"><i class=' car bx bx-cart-download'></i></div>
+        </div></div>
+        <div class="box"><div class="img"><img src="./img/products/f1-1.webp" alt=""></div>
+        <p>Dior</p>
+        <div class="name">cooton astronot Hoodie</div>
+        <div class="rating"><img src="./img/ratings/rating-50.png" alt=""></div>
+        <div class="price">
+          <div class="money">$57</div>
+          <div class="cart"><i class=' car bx bx-cart-download'></i></div>
+        </div></div>
+      </div>
+    </div>
+
+    <!-- imgage before New Arival -->
+    <div class="free">
+<h5>Repair Serivice</h5>
+<h2>Up to <b>70% off</b>-ALL T-shirts & Accesories</h2>
+<button>Explore More</button>
+    </div>
+<!-- New Arival -->
+
+<!-- blog posts -->
+<div class="post">
+  <div class="blog">1</div>
+  <div class="blog">2</div>
+  <div class="blog">3</div>
+  <div class="blog">4</div>
+  <div class="blog">5</div>
+</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
