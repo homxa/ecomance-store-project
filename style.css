@@ -224,6 +224,228 @@ right: 0px;
 }
 
 }
+
+@media(max-width: 980px){
+
+  footer{
+  padding: 10px;
+  gap: 10px;
+  
+  } 
+}
+@media(max-width: 1048px){
+
+  footer{
+  padding: 30px;
+  gap: 10px;
+  
+  }
+  }
+  @media(max-width: 955px){
+    
+    
+    footer{
+    padding: 10px;
+    gap: 10px;
+    grid-template-columns: 300px 150px 150px 150px;
+    margin-left: 10px;
+    
+    } 
+  }
+
+  @media(max-width: 870px){
+
+    footer{
+    padding: 5px;
+    gap: 10px;
+    grid-template-columns: 280px 150px 150px 150px;
+    margin-left: 10px;
+    
+    } 
+    }
+    @media(max-width: 850px){
+      
+      footer{
+      padding: 10px;
+      gap: 10px;
+      grid-template-columns: 245px 125px 125px 125px;
+      margin-left: 10px;
+      
+      } 
+    }
+
+    @media(max-width: 750px){
+      
+      footer{
+      padding: 10px;
+      gap: 10px;
+      grid-template-columns: 245px 125px 125px;
+      margin-left: 10px;
+      
+      } }
+      @media(max-width: 550px){
+        footer{
+          grid-template-columns: 230px 113px 110px;}
+      }
+
+      @media(max-width: 520px){
+        footer{
+          padding-left: 5px;
+          margin-left: 0px;
+          width: 100%;
+          overflow: hidden;
+          }
+          footer .foot{
+          width: 100%;
+          }
+      }
+      @media(max-width: 500px){
+        footer{
+          grid-template-columns: 235px 115px;
+          padding-left: 15px;
+          }
+          
+          footer .foot:nth-of-type(3){
+          grid-column: 2/3;
+          grid-row: 2;
+          
+          }
+      }
+  .subscribe{
+    background: darkblue;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    padding-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+  }
+  .subscribe .text{
+   
+  }
+  .subscribe .text p{
+text-align:inherit;
+font-size: 11px;
+color: gray;
+text-transform: capitalize;
+  }
+  .subscribe .text h3{
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+  .input{
+    display: flex;
+    padding-left: 30px;
+
+  }
+  .input div{
+background: white;
+width: 60%;
+height: 60%;
+align-self: center;
+border-radius: 4px;
+display: flex;
+
+  }
+  .input div input{
+width: 70%;
+font-size: 10px;
+padding-left: 10px;
+  }
+  .input div button{
+    padding: 5px;
+    background: darkcyan;
+    border: none;
+    height:100%;
+color: white;
+font-weight: bold;
+width: 30%;
+  }
+  @media(max-width: 900px){
+   
+    .input div{
+background: white;
+width: 70%;
+height: 60%;
+}
+  }
+  @media(max-width: 800px){
+  
+    .input div{
+background: white;
+width: 80%;
+height: 60%;
+}
+  }
+  @media(max-width: 670px){
+   
+
+    .input div{
+background: white;
+width: 100%;
+height: 90%;
+}
+.subscribe{
+  gap: 5px
+}
+.text{
+  grid-column:1/3;
+  grid-row: 1;
+}
+.input{
+  grid-column: 1/2 ;
+  grid-row: 2;
+  padding-left: 0px;
+}
+  }
+  @media(max-width: 510px){
+   
+
+    .input div{
+background: white;
+width: 60%;
+height: 90%;
+}
+.subscribe{
+  gap: 5px;
+  padding-left: 15px;
+}
+.text{
+  grid-column:1/3;
+  text-align: center;
+}
+.input{
+  grid-column: 1/3;
+  align-items: center;
+  justify-content: center;
+}
+  }
+  @media(max-width: 325px){
+   
+
+    .input div{
+background: white;
+width: 70%;
+height: 90%;
+}
+.subscribe{
+  gap: 5px;
+  padding: 10px;
+}
+.text{
+  grid-column:1/3;
+  text-align: center;
+}
+.input{
+  grid-column: 1/3;
+  align-items: center;
+  justify-content: center;
+}
+  }
+
 /* Global Styles */
 
 /*h1 {
