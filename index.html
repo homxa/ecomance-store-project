@@ -12,6 +12,19 @@
 
     <link rel="stylesheet" href="style.css" />
     <style>
+      /* .header nav{
+        height: 70vh;
+        display: block;
+        background-color: blue;
+        position: relative;
+        top: 250px;
+        z-index: 999;
+        display: none;
+      }*/
+   
+      /* .header:hover nav{
+display: block;
+      } */
      
         .hero{ 
             height: 90vh; 
@@ -224,42 +237,653 @@ background: pink;
   margin-bottom: 40px;
 }
 .post{
-  display: grid;
-  grid-template-columns: repeat(3, 350px);
+ margin-bottom: 60px;
+}
+.post .two,.three{
+display: grid;
+grid-template-columns: repeat(2, 470px);
+gap: 20px;
+justify-content: center;
+align-items: center;
+margin-bottom: 20px;
+}
+.post .three{
+  grid-template-columns: repeat(3, 300px);
+  
+  
+}
+.post .three .blog{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
-.post .blog:nth-of-type(1){
-grid-column: 1/3;
+.post .two .blog:nth-of-type(1),.post .two .blog:nth-of-type(2){
 
-  background: red;
-  grid-row: 1;
+  background-image: url('./img/banner/b17.jpg');
+  background-position: top 0px right 0px;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  grid-row: 1/3;
 
 }
+.blog h5{
+  font-size: 16px;
+  text-transform: capitalize;
+
+  font-weight: 400;
+  color: white;
+  padding-left: 15px;
+}
+.blog h2{
+  color: white;
+  padding-left: 15px;
+  text-transform: capitalize;
+
+
+}
+.blog button{
+  padding: 10px 20px;
+
+  border: 0; 
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  font-weight: 600;
+  margin-left: 15px;
+}
+.two .blog button:hover{
+  background-color: darkblue;
+}
+.blog p{
+  text-align: inherit;
+  color: white;
+  text-transform: capitalize;
+  font-size: 12px;
+  padding-left: 15px;
+  margin-top: -4px;
+
+}
+.post .two .blog:nth-of-type(2){
+  background-image: url('./img/banner/b10.jpg');
+  background-position: top 0px right 0px;
+  background-size: cover;
+}
+
 .post .blog:nth-of-type(2){
-  background: green;
+ 
+
+
+}
+.post .three .blog:nth-of-type(1) {
+  background-image: url('./img/banner/b7.jpg');
+  background-position: top 0px right 0px;
+  background-size: cover;
+  height: 30vh;
+}
+.post .three .blog:nth-of-type(2){
+  background-position: top 0px right 0px;
+  height: 30vh;
+
+  background-size: cover;
+  background-image: url('./img/banner/b4.jpg');
+}
+.post .three .blog:nth-of-type(3){
+  height: 30vh;
+
+  background-image: url('./img/banner/b18.jpg');
+  background-position: top 0px right 0px;
+  background-size: cover;
+}
+.three .blog h2{
+  font-size: 18px;
+}
+
+@media(max-width: 1048px){
+ 
+  footer{
+  padding: 30px;
+  gap: 10px;
+
+}
+}
+@media(max-width: 980px){
+ 
+  footer{
+  padding: 10px;
+  gap: 10px;
+
+} 
+.post .two{
+  grid-template-columns: repeat(2, 450px);
+gap: 20px;
+}
+
+}
+@media(max-width: 955px){
+  .post .two{
+  grid-template-columns: repeat(2, 400px);
+gap: 20px;
+}
+
+.post .three{
+  grid-template-columns: repeat(3, 260px);
+  
+  
+}
+
+  footer{
+  padding: 10px;
+  gap: 10px;
+  grid-template-columns: 300px 150px 150px 150px;
+  margin-left: 10px;
+
+} 
+.store p img{
+  width: 90px;
+  height: 30px;
+
+}
+.store p{ 
+  width: 100px;
+  height: 40px; 
+}
+
+
+}
+@media (max-width: 500px){
+
+}
+@media(max-width: 870px){
+  
+  footer{
+  padding: 5px;
+  gap: 10px;
+  grid-template-columns: 280px 150px 150px 150px;
+  margin-left: 10px;
+
+} 
+}
+@media(max-width: 850px){
+ 
+  .free{
+    width: 100%;
+  }
+  .post .two{
+  grid-template-columns: repeat(2, 350px);
+gap: 20px;
+}
+
+.post .three{
+  grid-template-columns: repeat(3, 230px);
+  
+  
+}
+
+  footer{
+  padding: 10px;
+  gap: 10px;
+  grid-template-columns: 245px 125px 125px 125px;
+  margin-left: 10px;
+
+} 
+.store p img{
+  width: 80px;
+  height: 25px;
+
+}
+.store p{ 
+  width: 90px;
+  height: 30px; 
+  padding-top: 5px;
+}
+}
+@media(max-width: 750px){
+ 
+  .blog h5{
+  font-size: 13px;
+  
+  padding-left: 10px;
+}
+.blog h2, .post .three h2{
+  font-size: 16px;
+  padding-left: 10px;
+  
+
+
+}
+.blog button{
+  padding: 5px 10px;
+  font-size: 12px;
+  margin-left: 15px;
+}
+
+.blog p,.post .three p{
+  
+  font-size: 11px;
+  padding-left: 10px;
+
+}
+.post .two{
+  grid-template-columns: repeat(2, 320px);
+gap: 10px;
+}
+
+.post .three{
+  grid-template-columns: repeat(3, 200px);
+  
+  
+}
+footer{
+  padding: 10px;
+  gap: 10px;
+  grid-template-columns: 245px 125px 125px;
+  margin-left: 10px;
+
+} 
+
+}
+@media(max-width: 670px){
+
+.hero{
+  padding-left: 60px;
+}
+.post .two{
+  grid-template-columns: repeat(2, 300px);
+gap: 10px;
+}
+.post .two .blog:nth-of-type(1){
+  grid-column: 1/3;
+}
+.post .two .blog:nth-of-type(2){
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+
+.blog h5{
+  font-size: 16px;
+  
+  padding-left: 10px;
+}
+.blog h2{
+  font-size: 20px;
+  padding-left: 10px;
+  
+
+
+}
+.blog button{
+  padding: 5px 10px;
+  font-size: 15px;
+  margin-left: 15px;
+}
+
+.blog p{
+  
+  font-size: 14px;
+  padding-left: 10px;
+
+}
+.post .three{
+  grid-template-columns: repeat(3, 200px);
+  gap: 10px
+  
+}
+.post .three .blog:nth-of-type(1){
+  grid-column: 1/3;
   grid-row: 1;
-  grid-column: 3/4;
+}
+.post .three .blog:nth-of-type(2){
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+.post .three .blog:nth-of-type(3){
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+
+}
+@media(max-width: 640px){
+
+.post .two{
+  grid-template-columns: repeat(2, 290px);
+gap: 10px;
+}
+
+
+.post .three{
+  width: 100%;
+  grid-template-columns: repeat(3, 200px);
+  gap: 10px;
+  
+}
+.post .three .blog:nth-of-type(1){
+  grid-column: 1/3;
+  grid-row: 1;
+  margin-left: 20px;
+}
+.post .three .blog:nth-of-type(2){
+  grid-column: 1/3;
+  grid-row: 2/3;
+  margin-left: 20px;
+
+}
+.post .three .blog:nth-of-type(3){
+  grid-column: 1/3;
+  margin-left: 20px;
+
+  grid-row: 3/4;
+}
+}
+@media(max-width: 610px){
+ 
+  .post .three{
+    width: 100%;
+  }
+  
+  .post .three .blog:nth-of-type(1){
+  margin-left: 30px;
+}
+.post .three .blog:nth-of-type(2){
+  margin-left: 30px;
+
+}
+.post .three .blog:nth-of-type(3){
+  margin-left: 30px;
+
+}
+  .post .two{
+  grid-template-columns: repeat(2, 280px);
+gap: 10px;
+}
+
+}
+@media(max-width: 590px){
+ 
+  .hero{
+    padding-left: 20px;
+  }
+  .post .two{
+  grid-template-columns: repeat(2, 260px);
+gap: 10px;
+}
+.post .three .blog:nth-of-type(1),
+.post .three .blog:nth-of-type(2),
+.post .three .blog:nth-of-type(3){
+  margin-left: 45px;
+}
+
+}
+@media(max-width: 550px){
+ 
+  
+  .post .two{
+  grid-template-columns: repeat(2, 240px);
+gap: 10px;
+width: 100%;
+}
+
+  .post .three .blog:nth-of-type(1),
+.post .three .blog:nth-of-type(2),
+.post .three .blog:nth-of-type(3){
+  margin-left: 60px;
+}
+
+footer{
+  
+  width: 100%;
+}
+.hero h4{
+
+padding-bottom: 6px;
+
+      }
+        .hero h2{
+font-size: 25px;
+
+line-height: 20.3px;
+
+
+        }
+        .hero h1{
+            font-size: 28px;
+            padding-bottom: 5px;
+        }
+        .hero .down p{
+            font-size: 13px;
+
+        }
+        footer{
+          grid-template-columns: 230px 113px 110px;
+
+}}
+@media (max-width: 520px){
+ 
+  .post .two{
+    grid-template-columns: repeat(2, 230px);
+
+  }
+  .post .two .blog:nth-of-type(1),.post .two .blog:nth-of-type(2){
+    height: 40vh;
+  }
+.post .three{
+  padding-left: 30px;
+}
+/* grid-template-columns: repeat(3, 200px); */
+
+  .post .three .blog:nth-of-type(1),
+.post .three .blog:nth-of-type(2),
+.post .three .blog:nth-of-type(3){
+  padding-left: 80px;
+
+}
+  footer{
+    padding-left: 5px;
+    margin-left: 0px;
+    width: 100%;
+    overflow: hidden;
+  }
+  footer .foot{
+    width: 100%;
+}
+}
+@media (max-width: 500px){
+ 
+  footer{
+    grid-template-columns: 235px 115px;
+    padding-left: 15px;
+  }
+  
+  footer .foot:nth-of-type(3){
+    grid-column: 2/3;
+    grid-row: 2;
+
+  }
+  
+  .content .items{
+    grid-template-columns: repeat(2,45%);
+gap: 10px;
+  }
+  .items .box .img{
+          width: 100%;
+          height: 160px;
+          justify-content: flex-start;
+         
+        }
+        .items .box .img img{
+          width: 150px;
+          height: 160px;
+          border-radius: 5px;
+
+        }
+        .items .box p{
+          font-size: 11px;
+          padding-top: 10px;
+        }
+        .items .box .name{
+          font-size: 13px;
+        }
+        .items .box .rating img{
+          width: 75px;
+        }
+        
+        
+        .items .box{
+          padding: 5px 10px;
+          border-radius: 5px;
+          
+        }
+        
+        .price .money{
+          
+          font-size: 15px;
+        }
 
 
 }
-.post .blog:nth-of-type(3){
-  background: brown;
-  grid-row: 2;
-}
-.post .blog:nth-of-type(4){
-  grid-row: 2;
+@media(max-width: 489px){
+ 
 
-  background: plum;
-}
-.post .blog:nth-of-type(5){
-  background: red;
-  grid-row: 2;
+  .post .two{
+    grid-template-columns: repeat(2,45%);
+  }
+  .post .three{
+    padding-left: 90px;
+    width: 100%;
+    grid-template-columns: repeat(3,200px);
+    overflow: scroll;
+   
+
+   
+  }
+  
+  
+  .post .three .blog:nth-of-type(1),
+.post .three .blog:nth-of-type(2),
+.post .three .blog:nth-of-type(3){
+  display: flex;
+  align-items: flex-start;
+ justify-content: center;
+  height: 25vh; 
 
 }
+.post .three .blog:nth-of-type(1){
+  grid-column: span 1;
+  grid-row: 1;
+  margin-left: 0px;
+}
+.post .three .blog:nth-of-type(2){
+  grid-column: span 1;
+  grid-row: 1/2;
+  margin-left: 10px;
+
+}
+.post .three .blog:nth-of-type(3){
+  grid-column: span 1;
+  margin-left: 10px;
+
+  grid-row: 1/2;
+}
+.post .three h2{
+font-size: 14px;
+}
+  .free h2{
+    font-size: 17px;
+
+  }
+  .free{
+    height: 40vh;
+  }
+  
+  .content .head h1{
+  font-size: 20px;
+}
+}
+@media (max-width: 370px){
+
+.blog h5{
+  font-size: 13px;
+  
+  padding-left: 10px;
+}
+.content .head h1{
+  font-size: 17px;
+}
+.content .head p{
+  font-size: 10px;
+}
+.blog h2{
+  font-size: 16px;
+  padding-left: 10px;
+  
+
+
+}
+.blog button{
+  padding: 3px 7px;
+  font-size: 12px;
+  margin-left: 12px;
+}
+
+.blog p{
+  
+  font-size: 12px;
+  padding-left: 5px;
+
+}
+.foot h4{
+  font-size: 9px
+}
+.foot p{
+  font-size: 7px;
+}
+.foot p b{
+  font-size: 9px;
+}
+.Box .box p{
+  font-size: 11px;
+  border-radius: 2px;
+}
+.free h2{
+  font-size: 15px;
+}
+}
+@media(max-width: 317px){
+
+  .content .items{
+    grid-template-columns: repeat(1, 230px);
+  }
+  .free h5{
+    font-size: 11px;
+  }
+  .free h2{
+    font-size: 13px;
+  }
+  .header nav ul{
+    width: 100vw;
+    height: 100vh;
+right: 0;
+top: -400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header nav .gett{
+    top: 0px;
+  }
+}
+
         
     </style>
+    
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />  
+
   </head>
 
   <body>
@@ -268,20 +892,20 @@ grid-column: 1/3;
       <div class="header">
         <div class="logo"><img src="./img/logo.png" alt="" /></div>
         <nav>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="">Shop</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">About</a></li>
-          <li><img src="./img/wbag.png" alt="" /></li>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
-              <path
-                fill="#FFF"
-                fill-rule="evenodd"
-                d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z"
-              />
-            </svg>
-          </li>
+          <ul class="ul">
+            <li class="close men"><img src="./img/pay/close.jpg" alt=""></li> 
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          
+          </ul>
+         
+
+          <li class="li"> <a href="cart.html"><img src="./img/wbag.png" alt="" /></a></li>
+          <li class="img open"><img src="./img/pay/menu1.jpg" alt=""></li>
+         
         </nav>
       </div>
 
@@ -297,7 +921,7 @@ grid-column: 1/3;
 </div>
     </div>
     <!-- how it works after Hero -->
-    <div class="Box">
+    <div class="Box" data-aos="fade-up">
 <div class="item-1 box"><img src="./img/features/f1.png" alt="">
 <p>free shipping</p></div>
 <div class="item-2 box"><img src="./img/features/f2.png" alt="">
@@ -316,8 +940,8 @@ grid-column: 1/3;
       </div>
 
 
-      <div class="items">
-        <div class="box">
+      <div class="items" >
+        <div class="box" data-aos="fade-left">
           <div class="img"><img src="./img/products/n1-1.jpg" alt=""></div>
           <p>Dior</p>
           <div class="name">cooton astronot Hoodie</div>
@@ -327,7 +951,7 @@ grid-column: 1/3;
             <div class="cart"><i class=' car bx bx-cart-download'></i></div>
           </div>
         </div>
-        <div class="box"><div class="img"><img src="./img/products/f1-2.webp" alt=""></div>
+        <div class="box" data-aos="fade-left"><div class="img"><img src="./img/products/f1-2.webp" alt=""></div>
         <p>Dior</p>
         <div class="name">cooton astronot Hoodie</div>
         <div class="rating"><img src="./img/ratings/rating-50.png" alt=""></div>
@@ -335,7 +959,7 @@ grid-column: 1/3;
           <div class="money">$57</div>
           <div class="cart"><i class=' car bx bx-cart-download'></i></div>
         </div></div>
-        <div class="box"><div class="img"><img src="./img/products/f1-3.webp" alt=""></div>
+        <div class="box" data-aos="fade-right"><div class="img"><img src="./img/products/f1-3.webp" alt=""></div>
         <p>Dior</p>
         <div class="name">cooton astronot Hoodie</div>
         <div class="rating"><img src="./img/ratings/rating-50.png" alt=""></div>
@@ -343,7 +967,7 @@ grid-column: 1/3;
           <div class="money">$57</div>
           <div class="cart"><i class=' car bx bx-cart-download'></i></div>
         </div></div>
-        <div class="box"><div class="img"><img src="./img/products/f1-4.webp" alt=""></div>
+        <div class="box" data-aos="fade-right"><div class="img"><img src="./img/products/f1-4.webp" alt=""></div>
         <p>Dior</p>
         <div class="name">cooton astronot Hoodie</div>
         <div class="rating"><img src="./img/ratings/rating-50.png" alt=""></div>
@@ -352,7 +976,7 @@ grid-column: 1/3;
           <div class="cart"><i class=' car bx bx-cart-download'></i></div>
         </div></div>
         
-          <div class="box"><div class="img"><img src="./img/products/f1-5.webp" alt=""></div>
+          <div class="box" data-aos="fade-left"><div class="img"><img src="./img/products/f1-5.webp" alt=""></div>
           <p>Dior</p>
           <div class="name">cooton astronot Hoodie</div>
           <div class="rating"><img src="./img/ratings/rating-50.png" alt=""></div>
@@ -360,7 +984,7 @@ grid-column: 1/3;
             <div class="money">$57</div>
             <div class="cart"><i class=' car bx bx-cart-download'></i></div>
           </div></div>
-        <div class="box"><div class="img"><img src="./img/products/f1-6.webp" alt=""></div>
+        <div class="box" data-aos="fade-left"><div class="img"><img src="./img/products/f1-6.webp" alt=""></div>
         <p>Dior</p>
         <div class="name">cooton astronot Hoodie</div>
         <div class="rating"><img src="./img/ratings/rating-50.png" alt=""></div>
@@ -368,7 +992,7 @@ grid-column: 1/3;
           <div class="money">$57</div>
           <div class="cart"><i class=' car bx bx-cart-download'></i></div>
         </div></div>
-        <div class="box"><div class="img"><img src="./img/products/f1-7.webp" alt=""></div>
+        <div class="box" data-aos="fade-right"><div class="img"><img src="./img/products/f1-7.webp" alt=""></div>
         <p>Dior</p>
         <div class="name">cooton astronot Hoodie</div>
         <div class="rating"><img src="./img/ratings/rating-50.png" alt=""></div>
@@ -376,7 +1000,7 @@ grid-column: 1/3;
           <div class="money">$57</div>
           <div class="cart"><i class=' car bx bx-cart-download'></i></div>
         </div></div>
-        <div class="box"><div class="img"><img src="./img/products/f1-1.webp" alt=""></div>
+        <div class="box " data-aos="fade-right"><div class="img"><img src="./img/products/f1-1.webp" alt=""></div>
         <p>Dior</p>
         <div class="name">cooton astronot Hoodie</div>
         <div class="rating"><img src="./img/ratings/rating-50.png" alt=""></div>
@@ -396,14 +1020,83 @@ grid-column: 1/3;
 <!-- New Arival -->
 
 <!-- blog posts -->
-<div class="post">
-  <div class="blog">1</div>
-  <div class="blog">2</div>
-  <div class="blog">3</div>
-  <div class="blog">4</div>
-  <div class="blog">5</div>
+<div class="post"><div class="two">
+  <div class="blog">
+   <h5>cray deals</h5> 
+    <h2>buy one get one free </h2>
+    <p> the best classic dress is at sell at Caro</p>
+    <button>Explore More</button>
+  </div>
+  <div class="blog"><h5>spring/summer</h5> 
+    <h2>upcomming seasion </h2>
+    <p> the best classic dress is at sell at Caro</p>
+    <button>Explore More</button></div></div>
+  <div class="three">
+  <div class="blog b-3">
+    <h2>Season sale</h2>
+    <p>Winter collection</p>
+  </div>
+  <div class="blog"> <h2>New foot-wear collection</h2>
+    <p>Winter collection</p></div>
+  <div class="blog"><h2>t-shirts</h2>
+    <p>Winter collection</p></div></div>
 </div>
+<!-- footer -->
 
+<footer>
+  <div class="foot">
+    <img src="./img/logo.png" alt="">
+    <div class="contact">
+      <h4>contact</h4>
+      <div class="adrres">
+        <p> <b>Adress</b>: Hayin danmani rigasa kaduna</p>
+        <p><b>phone</b>: 08166935326/Rougescripts@gmail.com</p>
+        <p><b>availability</b>: mon-fri 24/7</p>
+      </div>
+    </div>
+  </div>
+  <div class="foot">
+    <h4>About</h4>
+  
+  <div class="contact">
+    <div class="adrres">
+      <p>About us</p>
+      <p>delivary information</p>
+      <p>privacy policy</p>
+      <p>terms and conditions</p>
+    </div>
+  </div>
+  </div>
+  
+  <div class="foot"><h4>my account</h4>
+  
+    <div class="contact">
+      <div class="adrres">
+        <p>signIn</p>
+        <p>view cart</p>
+        <p>my waitList</p>
+        <p>Track my order</p>
+      </div>
+    </div></div>
+  <div class="foot">
+    <h4>install app</h4>
+    <div class="contact">
+      <div class="adrres">
+        <p>from App Store or Googgle Play</p>
+        <div class="store"><p><img src="./img/pay/app.jpg" alt=""></p>
+          <p><img src="./img/pay/play.jpg" alt=""></p></div>
+        
+        <p>payment methodes</p>
+        <img src="./img/pay/pay.png" alt="">
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({delay: 1000});
+    </script>
     <script src="script.js"></script>
+    <script src="./script/home.js"></script>
   </body>
 </html>

@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Spartan", sans-serif;
+  user-select: none;
 }
 body{
   background-color: var(--body-color);
@@ -33,6 +34,7 @@ html {
 body{
   width: 100%;
 }
+
 .header .logo{
   padding: 5px 10px;
 }
@@ -51,6 +53,9 @@ header{
   z-index: 999;
     /* margin-bottom: 90px; */
 }
+.header nav li.img,li.close{
+  display: none;
+}
 header nav img{
   width: 25px;
   height: 20px;
@@ -60,13 +65,13 @@ header nav img{
   display: flex;
   justify-content: space-between; 
   align-items: center;
-  padding: 5px 30px;
+  padding: 5px 25px;
  
   /* background: rgb(240, 240, 240); */
 }
-.header nav {
+.header nav, nav ul {
 display: flex;
-padding: 5px 10px;
+padding: 5px 8px;
 }
 .header nav li{
   align-self: center;
@@ -108,6 +113,116 @@ bottom: 0;
 }
 .header svg{
  
+}
+
+
+
+.foot img{
+  width: 100px;
+  margin-bottom: 5px;
+}
+.foot h4{
+font-size: 13px;
+margin-bottom: 6px;
+}
+.foot p{
+  font-size: 10px;
+  color: gray;
+  text-align: inherit;
+  transition: 0.3s ease-in-out;
+  text-transform: capitalize;
+}
+.foot p b{
+  font-size: 12px;
+  opacity: 80%;
+  color: rgb(42, 42, 42);
+}
+.foot .store{
+  display: flex;
+}
+.store p img{
+  width: 110px;
+  height: 30px;
+  border-radius: 5px;
+
+}
+.store p{
+  text-transform: capitalize;
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+padding: 3px;
+  width: 120px;
+  height: 40px;
+  border: 1px solid darkcyan;
+  border-radius: 5px;
+}
+.foot p:hover{
+color: darkcyan;
+}
+footer{
+  display: grid;
+  grid-template-columns: 350px 150px 150px 150px;
+padding-left: 80px;
+gap: 20px;
+
+
+}
+header{
+  height: 60px;
+}
+.header nav li.img,.header nav li.img img{
+  display: none;
+}
+@media (max-width: 720px){
+ 
+
+.header nav li.img,.header nav li.img img{
+display: block;
+width: 25px;
+background: inherit;
+}
+
+.header nav{
+position: relative;
+
+
+}
+
+.header nav ul{
+display: block;
+
+position: fixed;
+top: 0px;
+right: -400px;
+height: 100vh;
+background:  #e3e6f3;
+z-index: 1;
+width: 50vw;
+padding-top: 100px;
+box-shadow: 0px 5px 15px rgb(0, 0 ,0 ,0.1);
+order: 3;
+transition: 0.5s ease-in-out;
+}
+
+.header nav ul li{
+margin-bottom: 30px;
+}
+.header nav ul li.close{
+display: block;
+position: absolute;
+top: 60px;
+} 
+.header nav ul li.close img{
+width: 15px;
+
+}
+.header .gett{
+right: 0px;
+
+}
+
 }
 /* Global Styles */
 
